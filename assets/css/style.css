@@ -4,6 +4,7 @@ font-family: 'Roboto', sans-serif;*/
 *,
 *:before,
 *:after {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -37,6 +38,13 @@ h1, h2, h3, h4, h5 {
 	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
 }
 
+.fixed {
+	position: fixed;
+	width: 100%;
+
+	background: #0057a7;
+}
+
 .header__position {
 	position: absolute;
 	width: 100%;
@@ -45,12 +53,6 @@ h1, h2, h3, h4, h5 {
 	z-index: 100;
 }
 
-.header_fixed {
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-}
 
 .header__inner {
 	display: flex;
@@ -212,7 +214,7 @@ h1, h2, h3, h4, h5 {
 ======================================== */
 
 .intro {
-	background: #006493 url(../image/background.jpg) center no-repeat;
+	background: #006493 url(../images/background.jpg) center no-repeat;
 	background-size: cover;
 	padding-top: 100px;
 	height: 110%;
@@ -408,7 +410,7 @@ h1, h2, h3, h4, h5 {
 ========================================= */
 
 .companion {
-	background-image: url(../image/dubai.jpg);
+	background-image: url(../images/dubai.jpg);
 	padding: 100px 0;
 }
 
@@ -714,14 +716,64 @@ h1, h2, h3, h4, h5 {
 	/* Header */
 	.nav {
 		display: none;
+		width: 100%;
+		flex-direction: column;
+
+		background-color: #004295;
+		text-align: right;
+
+		position: absolute;
+		top: 100%;
+		right: 0;
+	}
+
+	.nav.show {
+		display: flex;
+	}
+
+	.nav__link {
+		padding: 12px 15px; 
+		margin: 0;
 	}
 
 	.nav__icons {
 		display: none;
+		flex-direction: column;
+		background-color: #004295;
+
+		position: absolute;
+		left: 0;
+		top: 100%;
+	}
+
+	.nav__icons.show {
+		display: flex;
+	}
+
+	.link__icon {
+		padding: 8px 8px;
+		margin: 0;
 	}
 
 	.call__button {
 		display: none;
+	}
+
+	.call__button.show {
+		display: inline-block;
+	}
+
+	.link__call {
+		font-size: 12px;
+		padding: 10px 15px;
+	}
+
+	.fa-phone {
+		font-size: 15px;
+	}
+
+	.day__work {
+		font-size: 12px;
 	}
 
 	/* Burger */
