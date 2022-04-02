@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5 {
 ======================================== */
 
 .intro {
-	background: #006493 url(../images/background.jpg) center no-repeat;
+	background: #006493 url(../image/background.jpg) center no-repeat;
 	background-size: cover;
 	padding-top: 100px;
 	height: 110%;
@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5 {
 ========================================= */
 
 .companion {
-	background-image: url(../images/dubai.jpg);
+	background-image: url(../image/dubai.jpg);
 	padding: 100px 0;
 }
 
