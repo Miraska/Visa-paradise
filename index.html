@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/2b17b3dc6c.js" crossorigin="anonymous"></script>
 	<script src="assets/js/index.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<title>visa-paradise</title>
 </head>
 <body>
@@ -17,10 +18,10 @@
 			<div class="container">
 				<div class="header__inner">
 					<!-- Logo -->
-					<div class="logo"><img src="assets/image/visa_paradise_logo.png" alt="img" width="100px"></div>
+					<div class="logo"><img src="assets/images/visa_paradise_logo.png" alt="img" width="100px"></div>
 					<!-- Navigation -->
 					<nav class="nav">
-						<a href="#" class="nav__link">Домой</a>
+						<a href="#home" class="nav__link">Главня</a>
 						<a href="#companion" class="nav__link">О нас</a>
 						<a href="#information" class="nav__link">Информация</a>
 						<a href="#register" class="nav__link">Оформить</a>
@@ -28,7 +29,7 @@
 
 					<!-- Nav Icons -->
 					<div class="nav__icons">
-						<a href="https://www.instagram.com/" class="link__icon"><i class="fa-brands fa-instagram"></i></a>
+						<a href="https://www.instagram.com/" class="link__icon"><i class="fa-brands fa-telegram"></i></a>
 						<a href="https://www.whatsapp.com/?lang=ru" class="link__icon"><i class="fa-brands fa-whatsapp"></i></a>
 						<a href="https://twitter.com/?lang=ru" class="link__icon"><i class="fa-brands fa-twitter"></i></a>
 					</div>
@@ -36,17 +37,22 @@
 					<!-- Call Button -->
 					<div class="call__button">
 						<a href="tel:+79393315840" class="link__call"><i class="fa-solid fa-phone"></i>Позвонить</a>
-						<div class="day__work">Пн - Пт 8:00 - 20:00</div>
+						<div class="day__work">+7 939 331 58 40</div>
 					</div>
+
+					<button class="burger" type="button">
+						<span class="burger__item"></span>
+					</button>
+
 				</div>
 			</div>
 		</header>
-	</div>	<!-- Header -->
+	</div>	<!-- /.Header -->
 
 
 
 	<!-- Intro -->
-	<div class="intro">
+	<div class="intro" id="home">
 		<div class="container">
 			<div class="intro__inner">
 				<!-- Intro Title -->
@@ -57,13 +63,12 @@
 
 				<!-- Intro Subtitle -->
 				<div class="intro__subtitle">
-					<h2 class="h2">100% - выгода</h2>
-					<h2 class="h2">оплата по карте</h2>
-					<h2 class="h2">В течении месяца</h2>
+					<h2 class="h2">оплата по криптовалюте</h2>
+					<h2 class="h2">В течении рабочих дней</h2>
 				</div>
 			</div>
 		</div>
-	</div>	<!-- Intro -->
+	</div>	<!-- /.Intro -->
 
 
 
@@ -73,26 +78,29 @@
 		<div class="container">
 			<!-- Information Title -->
 			<div class="works__3years">опыт работы более 3 лет</div>
-			<!-- Item 1 -->
-			<div class="information__item">
-				<img src="assets\image\icons\information__icons/handshake.png" alt="error404" class="information__icon">
-				<div class="works__title">с нами сотрудничуют</div>
-				<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
-			</div>
-			<!-- Item 2 -->
-			<div class="information__item">
-				<img src="assets\image\icons\information__icons/time_glass.png" alt="error404" class="information__icon">
-				<div class="works__title">сделаем в течении 3 дней</div>
-				<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
-			</div>
-			<!-- Item 3 -->
-			<div class="information__item">
-				<img src="assets\image\icons\information__icons/happiness.png" alt="error404" class="information__icon">
-				<div class="works__title">каждый остаётся довольным</div>
-				<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
+
+			<div class="information__inner">
+				<!-- Item 1 -->
+				<div class="information__item">
+					<img src="assets/images/information/information1.png" alt="error404" class="information__icon">
+					<div class="works__title">с нами сотрудничуют</div>
+					<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
+				</div>
+				<!-- Item 2 -->
+				<div class="information__item">
+					<img src="assets/images/information/information2.png" alt="error404" class="information__icon">
+					<div class="works__title">сделаем в течении 3 дней</div>
+					<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
+				</div>
+				<!-- Item 3 -->
+				<div class="information__item">
+					<img src="assets/images/information/information3.png" alt="error404" class="information__icon">
+					<div class="works__title">каждый остаётся довольным</div>
+					<div class="works__subtitle">мы сотрудничаем с многими известными компаниями и с фирмами</div>
+				</div>
 			</div>
 		</div>
-	</div>	<!-- Information -->
+	</div>	<!-- /.Information -->
 
 
 
@@ -109,66 +117,64 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- Stages -->
+	</div> <!-- /.Stages -->
 
 
+	<div class="container">
+		<!-- Stages Subinner -->
+		<div class="stages__subinner">
+			<!-- Icon 1 -->
+			<div class="stages__item">
+				<img src="assets/images/stages/mail.png" alt="error404" class="stages__icon" width="80">
 
-	<!-- Stages Subinner -->
-	<div class="stages__subinner">
-
-		<!-- Icon 1 -->
-		<div class="stages__subinner__icons">
-			<div class="stages__icons1">
-				<img src="assets/image/icons/mail.png" alt="error404" class="stages__icon" width="80">
+				<div class="stages__title">основные документы на Email или Whatsapp</div>
 			</div>
-			<div class="stages__title">основные документы на Email или Whatsapp</div>
-		</div>
 
-		<!-- Icon 2 -->
-		<div class="stages__subinner__icons">
-			<div class="stages__icons1">
-				<img src="assets/image/icons/shop_bag.png" alt="error404" class="stages__icon" width="80">
+			<!-- Icon 2 -->
+			<div class="stages__item">
+				<img src="assets/images/stages/shop_bag.png" alt="error404" class="stages__icon" width="80">
+
+				<div class="stages__title">передайте документы и паспорт</div>
 			</div>
-			<div class="stages__title">передайте документы и паспорт</div>
-		</div>
 
-		<div class="line__stages"></div>
+			<!-- Icon 3 -->
+			<div class="stages__item ">
+				<img src="assets/images/stages/diamond.png" alt="error404" class="stages__diamond" width="80">
 
-		<!-- Icon 3 -->
-		<div class="stages__subinner__icons ">
-			<div class="stages__icons">
-				<img src="assets/image/icons/diamond.png" alt="error404" class="stages__diamond" width="80">
+				<div class="stages__title">напишите отзыв о нашей компании и услугах</div>
 			</div>
-			<div class="stages__title">напишите отзыв о нашей компании и услугах</div>
-		</div>
-	</div> <!-- Stages Subinner -->
+		</div> <!-- /.Stages Subinner -->
+	</div>
 
 
 	<!-- Companion -->
 	<div class="companion">
 		<div class="container">
-			<!-- Title -->
-			<div class="h3__order"><h3>О НАШЕЙ КОМПАНИИ И ФИРМЕ</h3></div>
 			<!-- Companion Inner -->
 			<div class="companion__inner">
-				<!-- Order1 -->
+				<!-- Title -->
+				<div class="h3__order"><h3>О НАШЕЙ КОМПАНИИ И ФИРМЕ</h3></div>
+
 				<div class="order">
-					<div class="order__title"><h3>мы оформили много виз:</h3></div>
-					<span class="span">2000</span>
-				</div>
-				<!-- Order 2 -->
-				<div class="order">
-					<div class="order__title"><h3>опыт работы в годах:</h3></div>
-					<span class="span">3</span>
-				</div>
-				<!-- Order 3 -->
-				<div class="order">
-					<div class="order__title"><h3>помогли более:</h3></div>
-					<span class="span">100</span>
+					<!-- Order1 -->
+					<div class="order__item">
+						<div class="order__title"><h3>мы оформили много виз:</h3></div>
+						<span class="span">2000</span>
+					</div>
+					<!-- Order 2 -->
+					<div class="order__item">
+						<div class="order__title"><h3>опыт работы в годах:</h3></div>
+						<span class="span">3</span>
+					</div>
+					<!-- Order 3 -->
+					<div class="order__item">
+						<div class="order__title"><h3>помогли более:</h3></div>
+						<span class="span">100</span>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div> <!-- Companion -->
+	</div> <!-- /.Companion -->
 
 
 	<!-- Package Documents -->
@@ -183,37 +189,37 @@
 
 				<!-- Package Item 1 -->
 				<div class="package__item">
-					<img src="assets/image/icons/photos.png" alt="" class="pacage__icon" width="80px" height="80px">
+					<img src="assets/images/package/photos.png" alt="" class="pacage__icon" width="80px" height="80px">
 					<div class="package__text">нужно будет предоставить фото размером 3.5 на 4.5 не менее</div>
 				</div>
 
 				<!-- Package Item 2 -->
 				<div class="package__item">
-					<img src="assets/image/icons/documents.png" alt="" class="pacage__icon" width="70px" height="70px">
+					<img src="assets/images/package/documents.png" alt="" class="pacage__icon" width="70px" height="70px">
 					<div class="package__text">подписать всё что нужно и отправить нам в формате .pdf</div>
 				</div>
 
 				<!-- Package Item 3 -->
 				<div class="package__item">
-					<img src="assets/image/icons/icon_pasport.png" alt="" class="pacage__icon" width="80px" height="80px">
+					<img src="assets/images/package/icon_pasport.png" alt="" class="pacage__icon" width="80px" height="80px">
 					<div class="package__text">отправить ваш паспорт чтобы мы оформили документы</div>
 				</div>
 
 
 				<!-- Package Links 1 -->
 				<div class="package__links">
-					<img src="assets/image/icons/mail.png" alt="" class="package__icon" width="60px" height="60px">
-					<div class="package__text"><a href="javascript:PopUpShow()" class="package__link">узнать больше подробностей и<br>информации</a></div>
+					<img src="assets/images/package/mail.png" alt="" class="package__icon" width="60px" height="60px">
+					<div class="package__text"><a href="" class="package__link">узнать больше подробностей и<br>информации</a></div>
 				</div>
 
 				<!-- Package Links 2 -->
 				<div class="package__links">
-					<img src="assets/image/icons/mobile_phone.png" alt="" class="package__icon" width="60px" height="60px">
+					<img src="assets/images/package/mobile_phone.png" alt="" class="package__icon" width="60px" height="60px">
 					<div class="package__text"><a href="#" class="package__link">поделиться этой информацией<br>с другими</a></div>
 				</div>
 			</div>
 		</div>
-	</div> <!-- Package Documents -->
+	</div> <!-- /.Package Documents -->
 
 
 	<!-- Map -->
@@ -223,19 +229,19 @@
 
 				<!-- Map Item 1 -->
 				<div class="map__item">
-					<img src="assets/image/icons/gps.png" alt="" class="map__icon" width="80px" width="80px">
+					<img src="assets/images/map/gps.png" alt="" class="map__icon" width="80px" width="80px">
 					<div class="map__text">здесь вы можете узнать местоположение</div>
 				</div>
 
 				<!-- Map Item 2 -->
 				<div class="map__item">
-					<img src="assets/image/icons/mobile_phone.png" alt="" class="map__icon" width="80px" width="80px">
+					<img src="assets/images/map/mobile_phone.png" alt="" class="map__icon" width="80px" width="80px">
 					<div class="map__text">откройте карту в телефоне</div>
 				</div>
 
 				<!-- Map Item 3 -->
 				<div class="map__item">
-					<img src="assets/image/icons/documents.png" alt="" class="map__icon" width="80px" width="80px">
+					<img src="assets/images/map/documents.png" alt="" class="map__icon" width="80px" width="80px">
 					<div class="map__text">можете также узнать написать свой отзыв</div>
 				</div>
 
@@ -278,11 +284,14 @@
 					</div>
 					
 					<!-- Select -->
+					<div class="register__select">
 						<select name="country" class="select">
 							<option value="Виза на 30 дней" class="select__inner">Виза на 30 дней</option>
 							<option value="Виза на 90 дней" class="select__inner">Виза на 90 дней</option>
+							<option value="Продление визы на 30 дней" class="select__inner">Продление визы на 30 дней</option>
 							<option value="Продление визы на 90 дней" class="select__inner">Продление визы на 90 дней</option>
 						</select>
+					</div>
 
 					<!-- Btn -->
 					<input class="btn__input btn-default" type="submit" name="submit" value="Отправить">
@@ -290,7 +299,7 @@
 				</div>
 			</div>
 		</div> 
-	</form> <!-- Register -->
+	</form> <!-- /.Register -->
 
 	<!-- Footer -->
 	<footer class="footer">
@@ -298,88 +307,18 @@
 			<div class="footer__inner">
 
 				<!-- Copy Right -->
-				<div class="copy__right">2013-2022 © VISA | Лицензия №801364</div>
+				<div class="copy__right">2013-2022 © VISA-PARADISE | Лицензия</div>
 				<!-- Nav -->
 				<nav class="nav__footer">
-					<a href="#" class="link__footer">Home</a>
+					<a href="#home" class="link__footer">Главная</a>
 					<a href="#register" class="link__footer">To rder</a>
 					<a href="#companion" class="link__footer">About</a>
 					<a href="#information" class="link__footer">Information</a>
 					<!-- Share -->
-					<a href="mailto:miraska.007@gmail.com" class="footer__share"><img src="assets/image/icons/share.png" alt="" width="20px"></a>
+					<a href="mailto:miraska.007@gmail.com" class="footer__share"><img src="assets/images/icons/share.png" alt="" width="20px"></a>
 				</nav>
 			</div>
 		</div>
-	</footer> <!-- Footer -->
-
-
-	<!-- Popup -->
-	<div class="b-popup" id="popup1">
-   		<div class="b-popup-content">
-   			<a href="javascript:PopUpHide()" class="close__popup"><img src="assets/image/icons/close.png" alt="" width="30px" class="close__icon"></a>
-   			<div class="popup__title">ИНФОРМАЦИЯ</div>
-
-        	<span class="span__popup">Мы убедительно просим Вас проверить список необходимых документов перед их отправкой. Это позволит свести к минимуму вероятность задержки или отклонения Вашей заявки из-за того, что документы были поданы ненадлежащим или некорректным образом.
-			 Для каждого заявителя необходимо подготовить отдельный пакет подтверждающих документов и визовую анкету (например, если Вы путешествуете с детьми). В каждом пакете должно иметься своё подтверждение проживания. Документы принимаются только в формате А4.
-			Пожалуйста, ознакомьтесь с памяткой, составленной греческими консульскими службами. Она поможет Вам подготовить необходимые для подачи документы. Заявителям, подающим заявление в визовые центры консульской юрисдикции г. Москвы, необходимо перейти по этой ссылке. Заявителям, подающим заявление в визовые центры консульской юрисдикции г. Санкт-Петербурга, необходимо перейти по этой ссылке. Заявителям, подающим заявление в визовые центры консульской юрисдикции г. Новороссийска, необходимо перейти по этой ссылке.
-			С 14 сентября 2015 года оформление шенгенской визы предусматривает сбор биометрических данных. По этой причине заявители должны лично посетить визовый центр Греции.
-			По согласованию с консульством для последующих заявлений в течение следующих 59 месяцев отпечатки пальцев могут быть скопированы из предыдущего файла заявления из Визовой информационной системы (VIS).
-			Подача заявления на визу и получение паспорта могут быть сделаны заявителем лично в случае индивидуальных заявлений или аккредитованными туристическими агентами в случае группы. Подача по доверенности не допускается.Получение паспортов может осуществляться через законного представителя. Пожалуйста, нажмите здесь для дополнительной информации по процедуре получения паспорта. Для семей, по крайней мере один член семьи должен посетить визовый центр (обязательно при себе иметь оригинал документа, подтверждающего родство)Пожалуйста, ознакомьтесь со следующими ссылками для получения дополнительной информации по вышеуказанным вопросам.</span>
-    	</div>
-	</div> <!-- Popup -->
-
-	<!-- Java script -->
-<script>
-	// Header function
-		$(function() {
-	 let header = $('.header');
- 	let hederHeight = header.height(); // вычисляем высоту шапки
-  
- 	$(window).scroll(function() {
-   		if($(this).scrollTop() > 800) {
-    	header.addClass('header_fixed');
-    	header.css({
-      		'padding': '5px 0',
-      		'background': '#006493',
-      		'border-bottom': '2px solid #000',
-      		'transition': '.3s'
-    	});
-
-	}
-
-    else {
-    	header.removeClass('header_fixed');
-    	header.css({
-      	'border-bottom': '1px solid #fff',
-      	'background': 'none',
-      	'transition': '.3s'
-    });
-    	$('body').css({
-     	'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
-    })
-   }
- });
-});
-
-
-
-	// Popup
-	$(document).ready(function(){
-	        //Скрыть PopUp при загрузке страницы    
-	        PopUpHide();
-	    });
-	    //Функция отображения PopUp
-	    function PopUpShow(){
-	        $("#popup1").show();
-	    }
-	    //Функция скрытия PopUp
-	    function PopUpHide(){
-	        $("#popup1").hide();
-	    }
-
-	    foo.onclick = function(){
-	  this.classList.toggle('rotate')
-	}
-</script>
+	</footer> <!-- /.Footer -->
 </body>
 </html>
